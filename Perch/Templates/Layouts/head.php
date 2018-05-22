@@ -42,7 +42,10 @@
     <meta name="msapplication-TileColor" content="#fff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
-    <?php perch_content('Email Address'); ?>
+    <script>
+    var first = "<?php echo $contactDetails[0]['emailFirst']; ?>";
+    var last = "<?php echo $contactDetails[0]['emailLast']; ?>"; 
+    </script>
 </head>
 
 <body id="page_top" role="application">
