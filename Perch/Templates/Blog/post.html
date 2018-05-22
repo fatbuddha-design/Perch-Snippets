@@ -1,0 +1,32 @@
+<article class="blog-entry">
+    <h3>
+      <a href="<perch:blog id="postSlug" type="hidden">" rel="bookmark">
+      <perch:blog id="postTitle" type="text" label="Title" required size="m autowidth" order="1" count="chars" help="Between 50 & 60 Characters"></a>
+    </h3>
+    <p class="date">
+      <time datetime="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d H:i:s" divider-before="Publishing">">
+      Posted on <span class="italic_font"><perch:blog id="postDateTime" type="date" time="true" format="%d %B %Y"></span></time>
+      <perch:if exists="authorGivenName">
+      by <span class="italic_font"><perch:blog id="authorGivenName" type="hidden"> <perch:blog id="authorFamilyName" type="hidden"></span>
+    </p>
+      </perch:if>
+      <div class="link-container">
+      <div class="meta-tags">
+  			<perch:blog id="tags_html" encode="false" type="hidden">
+  		</div>
+  		<div class="categories">
+  			<perch:categories id="categories" set="blog" label="Categories" display-as="checkboxes">
+  			<a href="archive/category:<perch:category id="catSlug" type="slug">" class="p-category"><svg class="icon"><use xlink:href="../../assets/svg/regular.svg#book"></use></svg><perch:category id="catTitle" type="text"></a></perch:categories>
+  		 </div>
+     </div>
+    <perch:if exists="image">
+    <div>
+      <img src="<perch:blog id="image" type="image" width="1440" height="400" crop="true" label="Image" order="4">" alt="<perch:blog id="postTitle">">
+    </div>
+    </perch:if>
+    <div class="description">
+      <perch:blog id="postDescHTML" type="textarea" label="Post" order="2" size="xxl autowidth" editor="redactor" count="words" html required>
+    </div>
+</article>
+
+<perch:blog id="excerpt" type="textarea" label="Excerpt" order="3" editor="redactor" html suppress size="s">
