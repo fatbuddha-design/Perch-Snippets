@@ -1,0 +1,127 @@
+// custom styles
+
+.skip {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip-path: inset(1px);
+}
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  clip: auto !important;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  background-color: $white;
+  color: $dark-grey;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+}
+// debugger
+//*:not(path):not(g) {
+//  color: hsla(210, 100%, 100%, 0.9) !important;
+//  background: hsla(210, 100%, 50%, 0.5) !important;
+//  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+//  box-shadow: none !important;
+//}
+
+html {
+  height: 100%;
+  animation: fadeSiteIn 0.5s ease forwards;
+}
+
+html.fadeSiteOut {
+  animation: fadeSiteOut 0.5s ease forwards;
+}
+
+@keyframes fadeSiteIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSiteOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  cursor: default;
+}
+
+.icon {
+  position: relative;
+  top: 0.15rem;
+  margin-right: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.obscure {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip-path: inset(1px);
+}
+
+.hide {
+  display: none;
+}
+
+hr {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 25%;
+  width: 50%;
+  height: 1px;
+  border: none;
+  background-color: $light-grey;
+  color: $light-grey;
+}
