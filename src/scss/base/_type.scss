@@ -1,0 +1,127 @@
+/* -- Typography -- */
+body,
+html {
+  color: $font-color;
+  background-color: $background-color;
+  font-size: calc(#{$font-size} + 0.05vw);
+  letter-spacing: $letter-spacing;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $base-font;
+  line-height: $line-height;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  font-weight: 700;
+  font-family: $header-font;
+  text-align: $header-position;
+}
+
+h1 {
+  font-size: calc(#{$font-size} + 5vmin);
+  margin: 6vmin 0 2vmin;
+}
+
+h2 {
+  font-size: calc(#{$font-size} + 2.5vmin);
+  margin: 4vmin 0 1.5vmin;
+}
+
+h3 {
+  font-size: calc(#{$font-size} + 2vmin);
+  margin: 3vmin 0 1vmin;
+}
+
+h4 {
+  font-size: calc(#{$font-size} + 1.5vmin);
+  margin: 2vmin 0 0.5vmin;
+}
+
+h5 {
+  font-size: calc(#{$font-size} + 1vmin);
+  margin: 1vmin 0 0.25vmin;
+}
+
+h6 {
+  font-size: calc(#{$font-size} + 0.7vmin);
+  margin: 1vmin 0 0.25vmin;
+}
+
+p {
+  font-size: calc(#{$font-size} + 0.08vw);
+  margin: 0 0 2vmin;
+}
+
+li {
+  font-size: calc(#{$font-size} + 0.08vw);
+}
+
+pre {
+  display: block;
+  min-width: 100%;
+  margin: 0 0 2vmin;
+  padding: 0.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  color: $white;
+  background: $medium-grey;
+}
+
+code {
+  min-width: 100%;
+  margin: 0 0 2vmin;
+  padding: 0.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+  font-size: calc((#{$font-size} * 0.6) + 0.5vmin);
+}
+
+small {
+  margin: 0 0 2vmin;
+  padding: 0;
+  color: $light-grey;
+  font-size: calc((#{$font-size} * 0.7) + 0.5vmin);
+}
+
+blockquote {
+  margin: 0 0 2vmin;
+  padding: 0;
+  border-left: 2px solid $primary-color;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: calc((#{$font-size} * 1.2) + 0.5vmin);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.subtle {
+  color: $subtle-color;
+}
+
+.underline {
+  text-decoration: underline;
+}
