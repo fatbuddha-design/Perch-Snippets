@@ -3,7 +3,7 @@
         $http_host = getenv('HTTP_HOST');
             switch($http_host)
             {
-                case('we.local') :
+                case('xxxx.local') :
                 define("PERCH_DB_USERNAME", 'xxxx');
                 define("PERCH_DB_PASSWORD", 'xxxx');
                 define("PERCH_DB_SERVER", "xxxx");
