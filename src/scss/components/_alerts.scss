@@ -1,0 +1,42 @@
+// Alerts & Notifications
+.alert {
+  @include clearfix;
+
+  margin-bottom: $padding;
+  padding: 10px;
+  border-left: 3px solid;
+
+  &.alert-danger {
+    border-color: $danger-color;
+    background: lighten($danger-color, 35);
+    color: darken($danger-color, 15);
+  }
+
+  &.alert-success {
+    border-color: $success-color;
+    background: lighten($success-color, 45);
+    color: darken($success-color, 10);
+  }
+
+  &.alert-warning {
+    border-color: $warning-color;
+    background: lighten($warning-color, 40);
+    color: darken($warning-color, 10);
+  }
+
+  &.alert-info {
+    border-color: $info-color;
+    background: lighten($info-color, 48);
+    color: darken($info-color, 10);
+  }
+
+  &.alert-empty {
+    border: 1px dashed $silver;
+    background: #f4f4f4;
+    text-align: center;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
