@@ -1,0 +1,72 @@
+// Better default colors
+// Cool
+$aqua: #7fdbff;
+$blue: #2187c2;
+$navy: #001f3f;
+$teal: #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime: #01ff70; // Warm
+$yellow: #ffdc00;
+$orange: #e0552a;
+$red: #c41e3a;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b; // Gray Scale
+$white: #fff;
+$silver: #ddd;
+$silver-grey: #ccc;
+$grey: #aaa;
+$white-grey: #f5f5f5;
+$light-grey: #999;
+$medium-grey: #555;
+$dark-grey: #444;
+$black: #161b1e;
+// Project color variables
+$primary-color: $orange;
+$secondary-color: $black;
+$tertiary-color: $light-grey;
+$background-color: $white;
+$font-color: $dark-grey;
+$danger-color: $red;
+$success-color: $green;
+$info-color: $blue;
+$warning-color: $orange;
+$subtle-color: $light-grey;
+// gradient colors
+$grad-top-color: #0074d9;
+$grad-bottom-color: #7fdbff;
+// social-colors
+$twitter-color: #55acee;
+$facebook-color: #3b5998;
+$instagram-color: #e95950;
+$pinterest-color: #cb2027;
+$linkedin-color: #007bb5;
+$whatsapp-color: #4dc247;
+$youtube-color: #cc181e;
+// Navigation Variables
+$nav-height: 70px;
+$link-hover-color: $blue;
+
+// Consistent settings
+$content-width: 1000px;
+$transition: all 0.35s ease-in-out;
+$border-radius: 0; // Border-radius
+$border: 1px solid $primary-color;
+$button-border-radius: $border-radius; // Button border-radius
+$font-size: 16px; // Default font size
+$footer-font-size: 11px; // Footer default font size
+$copyright-font-size: 10px; // Copyright default font size
+$letter-spacing: 1.5px;
+$header-position: center;
+$padding: 2rem; // Padding and margins
+$line-height: 1.6; // Consistent height for buttons, inputs etc.
+$system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; // System fonts
+
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+$header-font: $system-font-stack;
+$base-font: $system-font-stack;
+// Responsive breakpoints
+$small-break: 480px;
+$medium-break: 720px;
+$big-break: 1024px;
