@@ -1,0 +1,33 @@
+<perch:before>
+</perch:before>
+     <div class="hentry">
+        <h4><a href="<perch:blog id="postURL">" rel="bookmark" class="entry-title"><perch:blog id="postTitle"></a></h4>
+        <perch:if exists="image"><img src="<perch:blog id="image" type="image" width="950" height="400" crop="true">" alt="<perch:blog id="postTitle">"></perch:if>
+      <div>
+        <p class="meta"><time class="dt-published" datetime="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d H:i:s" divider-before="Publishing">">
+            Posted on <span class="italic_font"><perch:blog id="postDateTime" type="date" time="true" format="%d %B %Y"></span>
+        </time>
+        <perch:if exists="authorGivenName"> by <span class="italic_font"><perch:blog id="authorGivenName" type="hidden"> <perch:blog id="authorFamilyName" type="hidden"></span>
+        </perch:if></p>
+    </div>
+    <div class="description entry-summary">
+        <perch:blog id="excerpt" type="textarea" textile="true">
+    </div>
+    <hr>
+  </div>
+<perch:after>
+
+<perch:after>
+    <perch:if exists="paging">
+        <div class="paging">
+            Page <perch:blog id="current_page"> of <perch:blog id="number_of_pages">
+            <perch:blog id="page_links" encode="false">
+            <perch:if exists="not_first_page">
+                <a href="<perch:blog id="prev_url" encode="false">">Previous</a>
+            </perch:if>
+            <perch:if exists="not_last_page">
+                <a href="<perch:blog id="next_url" encode="false">">Next</a>
+            </perch:if>
+        </div>
+    </perch:if>
+</perch:after>
