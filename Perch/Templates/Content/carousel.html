@@ -1,0 +1,11 @@
+<perch:repeater id="carousel_images" label="Images" max="6">
+<perch:before><div class="carousel"></perch:before>
+  <div>
+    <img src="<perch:content type="image" id="carousel_image" label="Carousel Image">" alt="<perch:content type="text" id="carousel_alt" label="Carousel Image Description" required title>">
+    <figcaption class="slide-caption">
+      <h3><perch:content type="text" id="carousel_figcaption_title" label="Carousel Caption Title" required></h3>
+      <perch:content type="textarea" id="carousel_figcaption" label="Carousel Caption Text" editor="redactor" html required>
+      <p><a class="slide-link" href="<perch:content id="url_link" type="pagelist" allowempty="false" output="pageurl" replace=".php|" label="Page to Link to" help="Please select the page you wish to link to" required>"><perch:content type="text" id="carousel_figcaption_title"></a></p>
+    </figcaption>
+  </div>
+<perch:after></div></perch:after></perch:repeater>
