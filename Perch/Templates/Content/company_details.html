@@ -12,7 +12,5 @@
 <perch:content id="spaceless_fax" type="text" label="Fax Number with No Spaces" help="Enter as one long number with a no spaces between area code and number, ie. 01603717066">
 <perch:content id="fax" type="text" label="Fax Number with Space" help="Enter as one long number with a single space between area code and number, ie. 01603 717066">
 <perch:content id="mobile" type="text" label="Mobile Number without Space" help="Enter as one long number with no spaces, should be eleven digits long">
-<script>
-  var first = "<perch:content id="emailFirst" type="text" label="Your Email Address before the @ symbol" help="Dont include the @ symbol" required title divider-before="Company Email Address">";
-  var last = "<perch:content id="emailLast" type="text" label="Your Email Address after the @ symbol" help="Dont include the @ symbol or finish with a full stop" required title>";
-</script>
+<perch:content id="emailFirst" type="text" label="Your Email Address before the @ symbol" help="Dont include the @ symbol" required title divider-before="Company Email Address">
+<perch:content id="emailLast" type="text" label="Your Email Address after the @ symbol" help="Dont include the @ symbol or finish with a full stop" required title>
