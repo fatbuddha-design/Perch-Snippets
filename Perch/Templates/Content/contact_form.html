@@ -1,0 +1,72 @@
+    <perch:form id="form-contact" method="post" app="perch_forms">
+
+    <div class="input<perch:error for="name" type="required"> error</perch:error>">
+    <perch:label for="name" class="obscure">Your name:</perch:label>
+    <perch:input id="name" type="text" required="true" label="Name" placeholder="Name (required)">
+    <perch:error for="name" type="required">
+    <p class="about-error">Please enter your name</p>
+    </perch:error>
+    </div>
+
+    <div class="input<perch:error for="landline" type="required"> error</perch:error>">
+    <perch:label for="name" class="obscure">Your landline:</perch:label>
+    <perch:input id="landline" type="tel" class="landline" label="Landline" placeholder="Landline Number">
+    <perch:error for="landline">
+    <p class="about-error">Please enter your Landline</p>
+    </perch:error>
+    </div>
+
+    <div class="input<perch:error for="mobile" type="required"> error</perch:error>">
+    <perch:label for="mobile" class="obscure">Your mobile:</perch:label>
+    <perch:input id="mobile" type="tel" class="mobile" label="Mobile" placeholder="Mobile Number">
+    <perch:error for="mobile">
+    <p class="about-error">Please enter your mobile</p>
+    </perch:error>
+    </div>
+
+    <div class="input<perch:error for="email" type="required"> error</perch:error><perch:error for="email" type="format"> error</perch:error>">
+    <perch:label for="email" class="obscure">Your email:</perch:label>
+    <perch:input id="email" type="email" required="true" label="Email" placeholder="Email Address (required)">
+    <perch:error for="email" type="required">
+    <p class="about-error">Please enter your email address</p>
+    </perch:error>
+    <perch:error for="email" type="format">
+    <p class="about-error">Please enter a valid email address</p>
+    </perch:error>
+    </div>
+
+    <div class="input<perch:error for="message" type="required"> error</perch:error>">
+    <perch:label for="message" class="obscure">Your message:</perch:label>
+    <perch:input id="message" type="textarea" required="true" label="Message" placeholder="Your Message (required)">
+    <perch:error for="message" type="required">
+    <p class="about-error">Please enter your message</p>
+    </perch:error>
+    </div>
+
+    <div class="contact-by">
+      <p>How Can We Contact You?</p>
+      <p class="form-consent">'Fat Buddha Designs will use the information you provide in this form in accordance with our <a href="/privacy" aria-label="privacy policy" title="privacy policy">privacy policy.</a> We will contact you by phone or email in response to your enquiry, you will have to check at least one option below.'</p>
+        <div>
+        <perch:label for="contactByPhone">By mobile:</perch:label>
+        <perch:input name="contactByPhone" type="checkbox" label="Contact By Phone" id="contactByPhone" value="true">
+        <perch:label for="contactByEmail">By Email:</perch:label>
+        <perch:input name="contactByEmail" type="checkbox" label="Contact By Email" id="contactByEmail" value="true">
+      </div>
+    </div>
+
+    <div>
+      <perch:input type="submit" class="button-submit" id="submit" value="Send">
+    </div>
+
+    <div class="obscure">
+        <perch:label for="banana" class="obscure">Important, Please Do Not Enter Anything In This Input:</perch:label>
+        <perch:input type="text" id="banana" antispam="honeypot" class="obscure">
+    </div>
+
+<perch:success>
+    <div class="alert success">
+        <perch:content id="success" type="textarea" size="m" label="Thank you message" editor="redactor" required>
+    </div>
+</perch:success>
+
+</perch:form>
