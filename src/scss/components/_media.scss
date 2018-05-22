@@ -1,0 +1,14 @@
+// Media
+
+audio,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: $border-radius;
+}

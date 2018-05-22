@@ -1,0 +1,98 @@
+/* -- Form Elements -- */
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=phone],
+input[type=search],
+input[type=submit],
+input[type=text],
+textarea {
+  padding: 0.6rem;
+  width: 300px;
+  height: calc(#{$line-height} * 2);
+  line-height: $line-height;
+  outline: none;
+  border: $border;
+  background-color: transparent;
+  border: $border;
+  border-radius: $button-border-radius;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+textarea {
+  height: $line-height * 3;
+}
+
+form {
+  // Wrap each form input/element in a field div
+  .field {
+    margin-bottom: $padding / 2;
+  }
+  // Notes go under the input fields
+  .hint {
+    margin-top: 5px;
+    color: $subtle-color;
+  }
+  // Required label
+  .is-required {
+    font-style: italic;
+  }
+  // Validation, add error class to the item div
+  .has-error {
+    // Validation reason
+    .error-description {
+      margin-top: 5px;
+      color: $danger-color;
+    }
+
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    input[type=phone],
+    input[type=search],
+    input[type=text],
+    textarea {
+      border-color: $danger-color;
+    }
+  }
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: $border;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-top: 0.25rem;
+  margin-right: 0.6rem;
+  border-radius: $border-radius;
+  display: inline-block;
+  position: relative;
+}
+
+input[type=checkbox]:checked {
+  border: 1px solid limegreen;
+  color: limegreen;
+}
+
+input[type=checkbox]:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  color: limegreen;
+}

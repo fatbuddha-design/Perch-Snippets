@@ -1,0 +1,16 @@
+// Tables
+
+table {
+  width: 100%;
+
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+  }
+
+  th {
+    border-bottom: 1px solid $silver-grey;
+    border-top: 1px solid $silver-grey;
+  }
+}
