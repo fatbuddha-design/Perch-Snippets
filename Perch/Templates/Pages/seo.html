@@ -1,0 +1,22 @@
+<meta name="description" content="<perch:pages id="description" label="Description" type="textarea" size="s" escape="true" help="70 - 160 characters" count="chars">">
+	<meta name="keywords" content="<perch:pages id="keywords" label="Keywords" type="textarea" size="xs" escape="true" help="Separate with commas" count="chars">">
+	<meta name="author" content="<perch:pages id="author" label="Author" type="textarea" size="xs" escape="true">">
+	<meta name="og:description" content="<perch:pages id="description" label="Description" type="textarea" size="xs" escape="true" help="70 - 160 characters" count="chars">">
+	<meta property="og:locale" content="<perch:pages id="og_locale" label="og Locale" type="select" options="en-029,en-AU,en-BZ,en-CA,en-GB,en-IE,en-IN,en-JM,en-MY,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,en-ZW">">
+	<meta property="og:type" content="<perch:pages id="og_type" label="og Type" type="select" options="Website,Article,Blog,Book,Game,Movie,Food,City,Country,Actor,Author,Politician,Company,Hotel,Restaurant">">
+	<meta property="og:title" content="<perch:pages id="og_title" label="og Title" type="textarea" size="xs" escape="true" help="Same as Page title above, 50 - 60 characters" count="chars">">
+	<meta property="og:url" content="<perch:pages id="url" type="hidden">">
+	<meta property="og:site_name" content="<perch:pages id="sitename" type="hidden">">
+	<meta property="og:image" content="<perch:pages id="sharing_image"  type="hidden">">
+	<meta property="article:author" content="<perch:pages id="author" type="hidden">">
+	<meta name="twitter:card" content="<perch:pages id="twitter_card" label="Twitter Card" type="select" options="summary,photo,player">">
+  <meta name="twitter:site" content="<perch:pages id="twittername" type="hidden">">
+	<meta name="twitter:title" content="<perch:pages id="og_title" type="hidden">">
+	<meta name="twitter:image" content="<perch:pages id="sharing_image" type="hidden">">
+	<meta name="twitter:url" content="<perch:pages id="url" type="hidden">">
+	<meta name="robots" content="<perch:pages id="noindex" label="Index or No-index" type="select" options="index,noindex" divider-before="Search engine indexing">">
+	<link rel="alternate" href="<perch:pages id="domain" type="hidden"><perch:pages id="canonical" type="pagelist" output="pageurl" replace=".php|,/index|" label="Canonical page" help="Please select the page you wish to have as the canonical URL for this page
+  (normaly just choose this page)" required="true">">
+  <link rel="canonical" href="<perch:pages id="domain" type="hidden"/><perch:pages id="canonical" type="pagelist" output="pageurl" replace=".php|,/index|" label="Canonical page" required="true">" hreflang="en-gb">
+  <perch:pages id="nofollow" label="Do not follow links" type="checkbox" value="nofollow" append=",">
+  <perch:pages id="nosnippet" label="Do not show a snippet" type="checkbox" value="nosnippet" append=",">
