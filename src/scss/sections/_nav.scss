@@ -1,0 +1,116 @@
+// navigation
+
+nav {
+  background-color: $white;
+  border-top: $border;
+  border-bottom: $border;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0;
+
+    li {
+      text-align: center;
+      padding: 0.6rem 0;
+
+      & a {
+        color: $dark-grey;
+
+        &:focus,
+        &:hover {
+          color: $light-grey;
+        }
+      }
+    }
+  }
+
+  .selected {
+    background-color: $primary-color;
+    border-radius: $border-radius;
+
+    & a {
+      color: $white;
+
+      &:focus,
+      &:hover {
+        color: $light-grey;
+      }
+    }
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    margin: 0.6rem 0 1rem 0.6rem;
+    padding: 0;
+    line-height: $line-height;
+
+    input[type=search] {
+      padding: 0.52rem 0.6rem;
+      border: $border;
+      border-radius: $border-radius 0 0 $border-radius;
+      box-shadow: none;
+      color: $dark-grey;
+      flex: 1 1 auto;
+      max-width: 15rem;
+    }
+
+    .icon {
+      fill: $white;
+      width: 1rem;
+      height: 1rem;
+      position: relative;
+      top: 0;
+      left: -2.1rem;
+      margin-right: 0;
+    }
+
+    .obscure {
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    input[type=submit] {
+      position: relative;
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 0 $border-radius $border-radius 0;
+      padding: 0.55rem 0.8rem;
+      width: 2.5rem;
+    }
+
+    input[type=submit]:focus,
+    input[type=submit]:hover {
+      background-color: tint($primary-color, 15%);
+    }
+  }
+}
+
+@media screen and (min-width: $medium-break) {
+  nav {
+    padding: 0;
+
+    ul {
+      flex-flow: row wrap;
+
+      li {
+        padding: 1rem;
+      }
+    }
+
+    .search-container {
+      flex-direction: row;
+      margin: 0.5rem 0 0.4rem 0.6rem;
+    }
+  }
+}

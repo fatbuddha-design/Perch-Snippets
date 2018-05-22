@@ -1,0 +1,89 @@
+// footer
+
+footer {
+  margin: 0;
+  background-color: $primary-color;
+  color: $white;
+  font-size: calc(#{$footer-font-size} + 0.5vmin);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    font-size: calc(#{$footer-font-size} + 0.5vmin);
+  }
+
+  a {
+    font-size: calc(#{$footer-font-size} + 0.5vmin);
+    color: $white;
+
+    &:visited {
+      color: shade($white, 15%);
+    }
+
+    &:focus,
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .footer_blog_container {
+    margin-top: 1rem;
+  }
+
+  .footer_blog {
+    border-radius: 4px;
+    background-color: shade($primary-color,10%);
+    color: $white;
+    padding: 0.6rem;
+  }
+
+  .footer_h6 {
+    text-transform: uppercase;
+  }
+
+  .footer_date {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  ul {
+    display: block;
+    margin: 1.5rem auto auto 1.5rem;
+    line-height: 2;
+
+    li {
+      font-size: calc(#{$footer-font-size} + 0.5vmin);
+    }
+  }
+
+  .icon {
+    fill: $white;
+  }
+}
+
+@media screen and (min-width: $medium-break) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 5rem;
+
+    hr {
+      display: none;
+    }
+
+    ul {
+      display: block;
+      margin: 1rem auto auto;
+    }
+  }
+}
+
+@media screen and (min-width: $big-break) {
+  footer {
+        padding: 2rem 8rem;
+  }
+}

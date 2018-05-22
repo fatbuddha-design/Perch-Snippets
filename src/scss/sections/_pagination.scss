@@ -1,0 +1,36 @@
+/* -- pagination -- */
+.paging {
+  display: flex;
+  flex-flow: row;
+  margin-top: 2.5rem;
+
+  ul {
+    display: flex;
+    flex-flow: row;
+  }
+
+  li {
+    margin: 0 0.4rem;
+    line-height: 1;
+
+    a {
+      background: $primary-color;
+      padding: 0.1rem 0.6rem;
+      border-radius: $border-radius;
+      margin: 0 0.3rem;
+      color: $white;
+      position: relative;
+      top: -0.1rem;
+    }
+  }
+
+  a {
+    background: $primary-color;
+    padding: 0.1rem 0.6rem;
+    border-radius: $border-radius;
+    margin: 0 0.3rem;
+    color: $white;
+    position: relative;
+    top: -0.5rem;
+  }
+}

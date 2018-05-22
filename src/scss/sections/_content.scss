@@ -1,0 +1,59 @@
+// content
+
+.content {
+  background-color: $white;
+  color: $medium-grey;
+  padding: 2rem 0.6rem;
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  ul {
+    list-style: dash;
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .centered_image {
+    display: block;
+    margin: auto 0;
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: $medium-break) {
+  .content {
+    hr {
+      margin-top: 4.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .column-container {
+      display: flex;
+      flex-direction: row;
+
+      .left-column {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

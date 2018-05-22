@@ -1,0 +1,16 @@
+/* -- sitemap -- */
+
+.sitemap-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sitemap-list ul li {
+  text-align: left;
+}
+
+.sitemap-list ul li:before {
+  content: '-';
+  margin-right: 0.4rem;
+}
