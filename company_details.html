@@ -1,0 +1,18 @@
+<perch:content id="company_name" type="text" label="Company Name" required title>
+<perch:content id="address_line_1" type="text" label="Address Line 1" required divider-before="Company Address">
+<perch:if exists="address_line_2"><perch:content id="address_line_2" type="text" label="Address Line 2"></perch:if>
+<perch:content id="village" type="text" label="Village" required>
+<perch:content id="city" type="text" label="Town/City" required>
+<perch:content id="county" type="text" label="County" required>
+<perch:content id="postcode" type="text" label="Postcode" required>
+<perch:content id="spaceless_phone" type="text" label="Phone Number with No Spaces" help="Enter as one long number with no spaces between area code and number, ie. 01603717078" divider-before="Company Phone Numbers">
+<perch:content id="phone" type="text" label="Phone Number with Space" help="Enter as one long number with a single space between area code and number, ie. 01603 717078">
+<perch:content id="spaceless_second_phone" type="text" label="Second Phone Number with No Spaces" help="Enter as one long number with no spaces between area code and number, ie. 01603717079">
+<perch:content id="second_phone" type="text" label="Second Phone Number with Space" help="Enter as one long number with a single space between area code and number, ie. 01603 717079">
+<perch:content id="spaceless_fax" type="text" label="Fax Number with No Spaces" help="Enter as one long number with a no spaces between area code and number, ie. 01603717066">
+<perch:content id="fax" type="text" label="Fax Number with Space" help="Enter as one long number with a single space between area code and number, ie. 01603 717066">
+<perch:content id="mobile" type="text" label="Mobile Number without Space" help="Enter as one long number with no spaces, should be eleven digits long">
+<script>
+  var first = "<perch:content id="emailFirst" type="text" label="Your Email Address before the @ symbol" help="Dont include the @ symbol" required title divider-before="Company Email Address">";
+  var last = "<perch:content id="emailLast" type="text" label="Your Email Address after the @ symbol" help="Dont include the @ symbol or finish with a full stop" required title>";
+</script>
