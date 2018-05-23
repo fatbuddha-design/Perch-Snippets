@@ -18,6 +18,9 @@
                 define(“PERCH_DB_PASSWORD”, ‘xxxx’);
                 define(“PERCH_DB_SERVER”, “xxxx”);
                 define(“PERCH_DB_DATABASE”, “xxxx”);
+                define('PERCH_PRODUCTION_MODE', 'PERCH_PRODUCTION');
+                define('PERCH_SSL', true);
+                define('PERCH_DEBUG', false);
                 break;
                             
                 default :
