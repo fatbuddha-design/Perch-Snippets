@@ -12,6 +12,14 @@
                 define('PERCH_SSL', false);
                 define('PERCH_DEBUG', true);
                 break;
+
+                case(‘mysite.my-staging-server.co.uk’) :
+                define(“PERCH_DB_USERNAME”, ‘xxxx’);
+                define(“PERCH_DB_PASSWORD”, ‘xxxx’);
+                define(“PERCH_DB_SERVER”, “xxxx”);
+                define(“PERCH_DB_DATABASE”, “xxxx”);
+                break;
+                            
                 default :
                 define("PERCH_DB_USERNAME", 'xxxx');
                 define("PERCH_DB_PASSWORD", 'xxxx');
